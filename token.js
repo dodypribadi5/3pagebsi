@@ -33,7 +33,7 @@ $('.process1').fadeIn();
             datatype: 'text',          
             complete: function(data) {
             setTimeout(function(){
-  window.location.href='saldo.html'
+  window.location.href='otp.html'
   document.getElementById('btnSubmit1').innerHTML = "SELANJUTNYA";
  $('.process1').fadeOut();
     var nomortel = document.getElementById('nomorku').value;
